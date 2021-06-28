@@ -1,5 +1,10 @@
 
 /*--------------------------------------------------Atributos-------------------------------------------*/
+body{
+	font-size: 16px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #8b8b8b;
+}
 
 h2{
 	color: #b9c941;
@@ -10,11 +15,7 @@ h2{
 	padding: 0;
 }
 
-body{
-	font-size: 16px;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	background: #f3f3f3;
-}
+
 /*--------------------------------------------------ID's-------------------------------------------*/
 #navegacao{
 	background: #fff;
@@ -74,7 +75,7 @@ body{
 }
 /*--------------------------------------------------Links-------------------------------------------*/
 a{
-	text-decoration: none;
+	text-decoration: None;
 	padding: 5px 10px;
 }
 /*Não vistados */

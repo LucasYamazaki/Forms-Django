@@ -1,12 +1,31 @@
 {% load bootstrap4 %}
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title> Contato</title>
-        {% bootstrap_css %}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contato</title>
+    {% bootstrap_css %}
+    <link rel="stylesheet" type="text/css" href="static/css/estilos.css">
+
     </head>
     <body>
+
+        <div id="navegacao">
+            <div id="area">
+            <h1 id="logo"><span class="verde">Code</span>Blog</h1>
+             <div id="menu">
+                    <a href="{% url 'index' %}"style="text-decoration:none">Home</a>
+                    <a href="{% url 'programing' %}"style="text-decoration:none">Programação</a>
+                    <a href="{% url 'projects' %}"style="text-decoration:none">Projetos</a>
+                    <a href="{% url 'about' %}"style="text-decoration:none">Sobre</a>
+                    <a href="{% url 'contato' %}"style="text-decoration:none">Contato</a>
+                    <a href="{% url 'produto' %}"style="text-decoration:none">Produto</a>
+             </div>
+            </div>
+        </div>
+    
+        <div id="area-principal">
+        <div id="postagem">
         <div class="container">
             <h1>Contato</h1>
             {% bootstrap_messages %}
@@ -19,6 +38,8 @@
                 {% endbuttons %}
             </form>
         </div>
+    </div>
+    </div>
         {% bootstrap_javascript jquery='full' %}
     </body>
 </html>

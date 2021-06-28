@@ -11,7 +11,7 @@ def contato(request):
     if str(request.method) == 'POST':
         if  form.is_valid():
              form.send_mail()
-             messages.success(request, 'E-mail enviado com sucesso!')
+             messages.success(request, 'Mensagem enviada com sucesso!')
              form = ContatoForm()
         else:
             messages.error(request, 'Erro ao enviar e-mail')
@@ -22,3 +22,15 @@ def contato(request):
 
 def produto(request):
     return render(request, 'produto.html')
+
+def about(request):
+    return render(request, 'about.html')
+
+def programing(request):
+    return render(request, 'programing.html')
+
+def projects(request):
+    return render(request, 'projects.html')
+
+def help(request):
+    return render(request, 'help.html')

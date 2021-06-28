@@ -4,6 +4,8 @@
 	<meta charset="utf-8">
 	<title>CodeBlog</title>
 	<link rel="stylesheet" type="text/css" href="static/css/estilos.css">
+	
+
 </head>
 <body>
 
@@ -11,11 +13,12 @@
 		<div id="area">
 		<h1 id="logo"><span class="verde">Code</span>Blog</h1>
 		<div id="menu">
-			<a href="index.html">Home</a>
-			<a href="programing.html">Programação</a>
-			<a href="projects.html">Projetos</a>
-			<a href="about.html">Sobre</a>
-			<a href="contato">Contato</a>
+			<a href="{% url 'index' %}">Home</a>
+                <a href="{% url 'programing' %}">Programação</a>
+                <a href="{% url 'projects' %}">Projetos</a>
+                <a href="{% url 'about' %}">Sobre</a>
+                <a href="{% url 'contato' %}">Contato</a>
+                <a href="{% url 'produto' %}">Produto</a>
 		
 
 		</div>
@@ -45,6 +48,7 @@
 		</div>
 
 	</div>
-
+	
+	
 </body>
 </html>
