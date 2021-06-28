@@ -11,7 +11,7 @@
             <h1>Contato</h1>
             {% bootstrap_messages %}
 
-            <form action="{% url 'contato' %}" method="post" class="form" autocomplete="off">
+            <form action="{% url 'contato.html' %}" method="post" class="form" autocomplete="off">
                 {% csrf_token %}
                 {% bootstrap_form form %}
                 {% buttons %}
