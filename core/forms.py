@@ -23,3 +23,4 @@ class ContatoForm(forms.Form):
             headers={'Reply-To' : email}
         )
         mail.send()
+#enviando ao ar
